@@ -70,7 +70,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Tokyo',
 
     /*
     |--------------------------------------------------------------------------
@@ -83,7 +83,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ja',
 
     /*
     |--------------------------------------------------------------------------
@@ -96,7 +96,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'ja',
 
     /*
     |--------------------------------------------------------------------------
@@ -109,7 +109,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'ja_JP',
 
     /*
     |--------------------------------------------------------------------------
@@ -183,6 +183,20 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        'Log' => Illuminate\Support\Facades\Log::class,
     ])->toArray(),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Domains
+    |--------------------------------------------------------------------------
+    |
+    | Domains needed in order to change route according to the domain
+    | Kind: admin, api
+    | admin is for admin panel. api is for api calls 
+    */
+
+    'admin_domain' => env('ADMIN_DOMAIN', '127.0.0.1'),
+    'api_domain' => env('API_DOMAIN', 'localhost'),
 
 ];

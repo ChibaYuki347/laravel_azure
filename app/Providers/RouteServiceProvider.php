@@ -29,8 +29,14 @@ class RouteServiceProvider extends ServiceProvider
         });
 
         $this->routes(function () {
+            // For Debugging
+            // dump('host',request()->getHost());
+            // dump('api_domain',config('app.api_domain'));
+            // dump('admin_domain', config('app.admin_domain'));
+            // dump(request()->getHost() === config('app.admin_domain'));
+            // dump(request()->getHost() === config('app.api_domain'));
+
             Route::middleware('api')
-                ->prefix('api')
                 ->group(base_path('routes/api.php'));
 
             Route::middleware('web')
@@ -38,3 +44,4 @@ class RouteServiceProvider extends ServiceProvider
         });
     }
 }
+
