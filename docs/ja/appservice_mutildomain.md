@@ -229,7 +229,7 @@ cp /etc/nginx/sites-enabled/default /home/default
 
 デフォルトの nginx 設定ファイルは下記のようになっています。
 
-```json
+```
 server {
     #proxy_cache cache;
         #proxy_cache_valid 200 1s;
@@ -519,6 +519,13 @@ class TrustHosts extends Middleware
 
 `$this->allSubdomainsOfApplicationUrl()`
 こちらの部分で APP_URL に設定されたドメインとそのドメインを信頼されたホストとして扱うようになっています。
+
+# ソースコードデプロイ
+
+ソースコードをデプロイします。
+今回の検証では Visual Studio Code の Azure 拡張機能を使ってデプロイしています。
+
+![VS Code Deploy](../img/shared/vscode_azextention_appservice_deploy.png)
 
 # 動作検証
 
