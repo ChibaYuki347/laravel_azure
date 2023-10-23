@@ -169,7 +169,7 @@ Route::prefix('api')->domain(config('app.admin_domain'))->group(function () {
 api_domain では先ほど削除された api プレフィックスをベースにして`/user`にルートさせています。
 つまり`api.example.com/user`にアクセスした場合にルートします。
 
-admin_domain では`api.example.com/api/user`にアクセスした場合にルートします。
+admin_domain では`admin.example.com/api/user`にアクセスした場合にルートします。
 そうすることで今までのルートを維持しつつ、api サブドメインを使うことができます。
 
 ```php
