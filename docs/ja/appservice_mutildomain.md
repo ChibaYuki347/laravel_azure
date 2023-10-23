@@ -518,7 +518,7 @@ class TrustHosts extends Middleware
 ```
 
 `$this->allSubdomainsOfApplicationUrl()`
-こちらの部分で APP_URL に設定されたドメインとそのドメインを信頼されたホストとして扱うようになっています。
+こちらの部分で APP_URL に設定されたドメインとそのサブドメインを信頼されたホストとして扱うようになっています。
 
 # ソースコードデプロイ
 
