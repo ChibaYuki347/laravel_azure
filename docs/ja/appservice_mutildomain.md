@@ -534,6 +534,8 @@ class TrustHosts extends Middleware
 _`Admin(Web)ホーム画面`_
 ![admin画面](../img/shared/admin.devop-expert_home.png)
 
+API については Postman によって検証を行なっています。
+
 _`Admin(Web) APIレスポンス(互換性維持の証明)`_
 ![admin api](../img/shared/admin_api.png)
 
